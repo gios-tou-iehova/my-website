@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> David Pro Barber Hub Produts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    html ,body{
+      overflow-x: hidden;
+    }
+       /* Navbar section style */
+  nav {
+    background-color: rgb(0, 0, 0);
+
+
+
+
+
+  }
+
+  .nav-item {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+
+
+
+  }
+
+  .nav-item:hover {
+    border-bottom: 1px solid white;
+    transition: .5s;
+  }
+
+
+
+
+
+  .nav-item {
+    font-size: 15px;
+  }
+
+
+
+  /* Dark overlay */
+
+
+  /* Text box */
+  .hero-text {
+    position: relative;
+    /* above overlay */
+    max-width: 500px;
+    z-index: 1;
+    filter: contrast(1);
+  }
+
+  h1 {
+
+
+    font-family: "Italiana", sans-serif;
+    animation: smoke 5s infinite ease-in-out;
+  }
+
+  .hero-text {
+
+    animation: bounce 4s infinite ease-in-out;
+  }
+
+  /* Bouncing text */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes smoke {
+    0% {
+      opacity: 80%;
+      transform: translateY(0) scale(1);
+
+    }
+
+    50% {
+
+      transform: translateY(-20px) scale(1.1);
+
+    }
+
+    100% {
+
+      transform: translateY(0) scale(1);
+
+    }
+
+  }
+
+  /* sections */
+  h2 {
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-family: "Abril Fatface", serif;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px;
+    padding-top: 20px;
+
+  }
+
+  h5 {
+    font-family: "Pacifico", cursive;
+
+    font-size: 2rem;
+  }
+
+  /* scroling animation */
+  .scroll-card {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-out;
+  }
+
+  /* Show state */
+  .scroll-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<body class="bg-black text-white  ">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top   ">
+    <div class="container">
+      <a style="text-align: left;" class="navbar-brand" href="#"><img
+          style="width: 90px; height: 90px; filter: brightness(2); object-fit: cover;"
+          src="/img/file_00000000ce9c6246adf2abe50a7c5c29.png" alt=""></a>
+
+      <button style="background-color: white;" class="navbar-toggler d-lg-none " type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul style="margin-left: 2cm;" class="navbar-nav me-auto mt-2 mt-lg-0 ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="/index.html" aria-current="page">Home
+              <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/about2.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/index.html#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/index.html#gallery">Gallery</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/produts.html" onclick="setActive(this)">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/index.html#testimonial">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact.html">Contact Us</a>
+
+          </li>
+
+      </div>
+
+    </div>
+
+  </nav>
+  <!-- LANDING PAGE -->
+
+  <section style="background: url(/img/product5.jpg)center center/cover; ;"
+    class="container-fluid vh-100 d-flex align-items-center  scroll-card">
+    <div class="container">
+      <div class="row align-items-center flex-nowrap">
+
+        <!-- Left Text -->
+        <div class=" text-start">
+          <h1 style="font-size: 80px;filter: brightness(3); ;" class="display-5   hero-text h1 text-white">🛒 David Pro
+            Grooming Supply
+
+          </h1>
+          <p class="lead hero-text p text-white">From precision clippers to premium grooming products, we bring you
+            everything you need to cut, style, and elevate your craft.</p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container py-5 bg-black text-white scroll-card">
+    <div class="text-center mb-5 scroll-card" data-aos="fade-left">
+      <h2 class="fw-bold">Our Products & Sales</h2>
+      <p class="text-white-50">Premium grooming essentials available in-store and online.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center g-4">
+          <img style="object-fit: cover;"  src="/img/towels.jpg" class="card-img-top" alt="Luxury Barber Towels" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Luxury Barber Towels</h5>
+            <p class="card-text">Soft, absorbent towels for a comfortable experience.</p>
+            <p class="fw-bold">₦4,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img src="/img/black snake.jpg" class="card-img-top" alt="Precision Hair Clippers"width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Precision Hair Clippers</h5>
+            <p class="card-text">High-performance clippers for precise cuts.</p>
+            <p class="fw-bold">₦20,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/cream.jpg" class="card-img-top" alt="Styling Hair Cream"width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Styling Hair Cream</h5>
+            <p class="card-text">Cream for styling and finishing.</p>
+            <p class="fw-bold">₦4,500</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="img/pro mental.jpg" class="card-img-top" alt="Professional Trimmers" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Professional Trimmers</h5>
+            <p class="card-text">Trimmers for detailed work and clean lines.</p>
+            <p class="fw-bold">₦25,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Complete Shaving Kit.jpg" class="card-img-top" alt="Complete Shaving Kit" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Complete Shaving Kit</h5>
+            <p class="card-text">All-in-one kit for a smooth shave.</p>
+            <p class="fw-bold">₦3,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Products Start -->
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Classic Razor.jpg" class="card-img-top" alt="Classic Razor" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Classic Razor</h5>
+            <p class="card-text">Sharp blades for a timeless shave.</p>
+            <p class="fw-bold">₦5,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Premium Comb Set.jpg" class="card-img-top" alt="Premium Comb Set" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Premium Comb Set</h5>
+            <p class="card-text">Durable combs for professional styling.</p>
+            <p class="fw-bold">₦7,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="img/Aftershave Lotion.webp" class="card-img-top" alt="Aftershave Lotion" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Aftershave Lotion</h5>
+            <p class="card-text">Smooth, refreshing post-shave care.</p>
+            <p class="fw-bold">₦12,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Professional Scissors.avif" class="card-img-top" alt="Professional Scissors" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Professional Scissors</h5>
+            <p class="card-text">Precision scissors for expert cuts.</p>
+            <p class="fw-bold">3,500</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Barber Brush.jpg" class="card-img-top" alt="Barber Brush" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Barber Brush</h5>
+            <p class="card-text">Soft bristles for clean finishes.</p>
+            <p class="fw-bold">₦4,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Beard Oil.jpg" class="card-img-top" alt="Beard Oil" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Beard Oil</h5>
+            <p class="card-text">Nourishment for strong, healthy beards.</p>
+            <p class="fw-bold">₦5,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Hair Shampoo.jpg" class="card-img-top" alt="Hair Shampoo" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hair Shampoo</h5>
+            <p class="card-text">Gentle cleanse for everyday grooming.</p>
+            <p class="fw-bold">₦9,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Conditioner.jpg" class="card-img-top" alt="Hair Conditioner" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hair Conditioner</h5>
+            <p class="card-text">Keeps hair soft, smooth, and manageable.</p>
+            <p class="fw-bold">₦6,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Dryer.jpg" class="card-img-top" alt="Hair Dryer" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hair Dryer</h5>
+            <p class="card-text">Fast drying with professional performance.</p>
+            <p class="fw-bold">₦30,000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Towel Warmmer.jpg" class="card-img-top" alt="Hair Dryer" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Towel Warmmer</h5>
+            <p class="card-text">Nice Hot towel warmmer </p>
+            <p class="fw-bold">₦40,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="card bg-black text-white border-0 text-center">
+          <img style="object-fit: cover;" src="/img/Kit.webp" class="card-img-top" alt="Barber Starter Kit" width="300" height="300">
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+            style="background: rgba(0,0,0,0.6); opacity: 0; transition: opacity 0.3s;"
+            onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
+            <a href="/contact.html" class="btn btn-light">Buy now</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Barber Starter Kit</h5>
+            <p class="card-text">Everything you need to start barbering.</p>
+            <p class="fw-bold">₦11,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Products End -->
+    </div>
+
+    <!-- Best Sellers We Have --> <!-- Best Sellers We Have --> <!-- Best Sellers We Have -->
+    <section class="container py-5 text-white">
+      <div class="text-center mb-5" data-aos="fade-right">
+        <h2 class="fw-bold">Best Sellers</h2>
+        <p class="text-secondary">Our most popular grooming essentials, trusted by barbers worldwide.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card bg-dark border-0 h-100 text-center">
+            <div class="position-relative">
+              <img src="/img/Achieve the perfect trim with our top-rated trimmer.111.jpg" class="card-img-top"
+                alt="Precision Trimmer">
+              <span class="badge bg-light  position-absolute top-0 start-0 m-2">BEST SELLER</span>
+            </div>
+            <div class="card-body text-white">
+              <h5 class="">Precision Trimmer</h5>
+              <p class="text-white">Achieve the perfect trim with our top-rated trimmer.</p>
+              <p>$120.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card bg-dark border-0 h-100 text-center">
+            <div class="position-relative">
+              <img src="/img/Experience a smooth, close shave with our classic cream..jpg" class="card-img-top"
+                alt="Classic Shaving Cream">
+              <span class="badge bg-light  position-absolute top-0 start-0 m-2">MOST POPULAR</span>
+            </div>
+            <div class="card-body text-white">
+              <h5>Classic Shaving Cream</h5>
+              <p class="text-white">Experience a smooth, close shave with our classic cream.</p>
+              <p>$35.00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card bg-dark border-0 h-100 text-center">
+            <div class="position-relative">
+              <img src="/img/Keep your style in place all day with our best-selling pomade..jpg" class="card-img-top"
+                alt="Styling Pomade">
+            </div>
+            <div class="card-body text-white">
+              <h5>Styling Pomade</h5>
+              <p class="text-white">Keep your style in place all day with our best-selling pomade.</p>
+              <p>$25.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials CLIENTS -->
+
+    <section class="container py-5 text-white">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" data-aos="fade-left">What Our Clients Say</h2>
+        <p class="text-secondary">Hear from our satisfied customers about their experience.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="bg-dark border-0 p-4 h-100">
+            <div class="mb-2 text-warning">
+              ★★★★★
+            </div>
+            <p class="fst-italic">“The best barber I've ever been to. The attention to detail is unmatched, and the
+              atmosphere is top-notch.”</p>
+            <div class="d-flex align-items-center mt-3">
+              <img style="object-fit: cover;" src="/img/price black.avif" alt="Ethan Carter" class="rounded-circle me-2"
+                width="70" height="70">
+              <div>
+                <h6 class="mb-0">Price Paule</h6>
+                <small class="text-secondary">2 months ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="bg-dark border-0 p-4 h-100">
+            <div class="mb-2 text-warning">
+              ★★★★☆
+            </div>
+            <p class="fst-italic">“Great service and a fantastic haircut. The products they use are also really good.”
+            </p>
+            <div class="d-flex align-items-center mt-3">
+              <img style="object-fit: cover;" src="/img/nulral black.avif" alt="Liam Harper" class="rounded-circle me-2"
+                width="70" height="70">
+              <div>
+                <h6 class="mb-0">Rody Bull</h6>
+                <small class="text-secondary">3 months ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="bg-dark border-0 p-4 h-100">
+            <div class="mb-2 text-warning">
+              ★★★★★
+            </div>
+            <p class="fst-italic">“Always a pleasure to visit. The staff are friendly, and the haircuts are consistently
+              excellent.”</p>
+            <div class="d-flex align-items-center mt-3">
+              <img style="object-fit: cover;" src="/img/blackman.avif" alt="Noah Bennett" class="rounded-circle me-2"
+                width="70" height="70">
+              <div>
+                <h6 class="mb-0">Noah Bennett</h6>
+                <small class="text-secondary">4 months ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div style="border-bottom: 1px solid white;" class="  w-100 mx-auto mb-4"></div>
+    <footer style="margin-top: 2cm; text-align: center;" class=" text-white pt-5 pb-3 scroll-card">
+      <div class="container">
+        <div class="row scroll-card">
+
+          <!-- Logo + Tagline -->
+          <div class="col-md-3 mb-4" data-aos="zoom-out-left">
+            <a style="text-align: left;" class="navbar-brand" href="#"><img
+                style="width: 90px; height: 90px; filter: brightness(2); object-fit: cover; border-radius: 20px;"
+                src="/img/file_00000000ce9c6246adf2abe50a7c5c29.png" alt=""></a>
+
+            <p>Sharp Cuts, Timeless Style.</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">QUICK LINKS</h6>
+            <ul class="list-unstyled">
+              <li><a href="/index.html" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="/about2.html" class="text-white text-decoration-none">About</a></li>
+              <li><a href="index.html#service" class="text-white text-decoration-none">Services</a></li>
+              <li><a href="/index.html#gallery" class="text-white text-decoration-none">Gallery</a></li>
+              <li><a href="/contact.html" class="text-white text-decoration-none">Contact</a></li>
+              <li><a href="/produts.html" class="text-white text-decoration-none">Shop</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">CONTACT INFO</h6>
+            <p class="mb-1">Face 5 kurudu Army Estate, Abuja</p>
+            <p class="mb-1">+2347033712240</p>
+            <p class="mb-0">bkia2821@gmail.com</p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">FOLLOW US</h6>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-youtube"></i></a>
+          </div>
+
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center">
+          <small>© 2025 Sharp Cuts Barbershop. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+    </script>
+    <script>
+      AOS.init({
+        once: false
+      });
+    </script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
